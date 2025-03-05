@@ -10,7 +10,7 @@ references:
     - https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell
 author: James Pemberton / @4A616D6573
 date: 2019-10-24
-modified: 2023-01-10
+modified: 2025-03-05
 tags:
     - attack.execution
     - attack.t1059.001
@@ -24,6 +24,7 @@ detection:
             - '[System.Net.WebRequest]::create'
             - 'curl '
             - 'Invoke-RestMethod'
+            - 'irm '
             - 'Invoke-WebRequest'
             - 'iwr '
             - 'Net.WebClient'
